@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#061a3d">
+<title>VISA ONE AI | Your Intelligent Travel Companion</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="ambient a1"></div><div class="ambient a2"></div>
+<header class="topbar">
+  <a class="brand" href="#"><span class="mark">V<span>✦</span></span><span class="brand-title">VISA ONE <b>AI</b><small>YOUR INTELLIGENT TRAVEL COMPANION</small></span></a>
+  <div class="head-right"><button id="langToggle" class="lang">عربي / EN</button><i class="online"></i><span data-ar="المساعد جاهز" data-en="Assistant ready">المساعد جاهز</span></div>
+</header>
+<main class="layout">
+<section class="hero">
+  <div class="eyebrow"><i></i><span data-ar="جيل جديد من المساعدة في السفر" data-en="A new generation of travel assistance">جيل جديد من المساعدة في السفر</span></div>
+  <h1 data-ar="رحلتك القادمة<br><em>تبدأ بمحادثة.</em>" data-en="Your next journey<br><em>starts with a conversation.</em>">رحلتك القادمة<br><em>تبدأ بمحادثة.</em></h1>
+  <p class="intro" data-ar="احكِ لنا وين حابب تروح. VISA ONE AI بيساعدك ترتّب أفكارك وتكتشف خيارات السفر المناسبة إلك." data-en="Tell us where you want to go. VISA ONE AI helps you explore travel options and organize your plans.">احكِ لنا وين حابب تروح. VISA ONE AI بيساعدك ترتّب أفكارك وتكتشف خيارات السفر المناسبة إلك.</p>
+  <div class="orb-area"><div class="halo h1"></div><div class="halo h2"></div><div class="orb"><div class="core"></div><i class="ribbon r1"></i><i class="ribbon r2"></i><i class="ribbon r3"></i><i class="shine"></i></div><div class="orb-label"><i></i><span id="orbStatus" data-ar="جاهز يسمعك" data-en="Ready to listen">جاهز يسمعك</span></div></div>
+  <button type="button" id="orbMic" class="orb-mic" aria-label="ابدأ المحادثة الصوتية"><span class="orb-mic-icon">🎙</span><span id="orbMicText" data-ar="ابدأ المحادثة الصوتية" data-en="Start voice conversation">ابدأ المحادثة الصوتية</span></button>
+  <div class="hero-note"><b>✧</b><span data-ar="محادثة طبيعية. أفكار أوضح. سفر أذكى." data-en="Natural conversation. Clearer choices. Smarter travel.">محادثة طبيعية. أفكار أوضح. سفر أذكى.</span></div>
+</section>
+<section class="panel">
+  <div class="panel-head"><div><small data-ar="مساعد السفر الشخصي" data-en="YOUR PERSONAL TRAVEL ASSISTANT">مساعد السفر الشخصي</small><h2 data-ar="خلينا نخطط لرحلتك" data-en="Let's plan your journey">خلينا نخطط لرحلتك</h2></div><b>✦</b></div>
+  <div class="welcome"><span>✦</span><div><strong data-ar="أهلاً بك في VISA ONE AI" data-en="Welcome to VISA ONE AI">أهلاً بك في VISA ONE AI</strong><p data-ar="وين حابب تسافر اليوم؟ فيك تكتب طلبك أو تبدأ المحادثة الصوتية." data-en="Where would you like to travel today? Type a message or start a voice conversation.">وين حابب تسافر اليوم؟ فيك تكتب طلبك أو تبدأ المحادثة الصوتية.</p></div></div>
+  <div id="messages" class="messages" aria-live="polite" aria-relevant="additions text"><div class="message" data-static="true"><span class="avatar">V</span><div class="bubble" data-ar="خبرني عن وجهتك، موعد السفر، والميزانية التقريبية. رح ساعدك ترتّب الخيارات خطوة بخطوة." data-en="Tell me your destination, travel dates, and approximate budget. I'll help you organize your options step by step.">خبرني عن وجهتك، موعد السفر، والميزانية التقريبية. رح ساعدك ترتّب الخيارات خطوة بخطوة.</div></div></div>
+  <div class="prompts"><button data-prompt="بدي سافر من أمستردام إلى إسطنبول الشهر القادم" data-en-prompt="I want to fly from Amsterdam to Istanbul next month">✈ <span data-ar="خططلي رحلة" data-en="Plan a trip">خططلي رحلة</span></button><button data-prompt="شو لازم أعرف قبل ما أقدم على تأشيرة؟" data-en-prompt="What should I know before applying for a visa?">⌁ <span data-ar="معلومات التأشيرة" data-en="Visa information">معلومات التأشيرة</span></button><button data-prompt="ساعدني أختار وجهة سفر مناسبة لميزانيتي" data-en-prompt="Help me choose a destination for my budget">✧ <span data-ar="اقترح وجهة" data-en="Suggest a destination">اقترح وجهة</span></button></div>
+  <form id="form" class="composer"><button type="button" id="mic" class="mic" aria-label="Microphone" title="Voice input"><svg viewBox="0 0 24 24"><rect x="9" y="2.5" width="6" height="12" rx="3"/><path d="M5.5 10.5a6.5 6.5 0 0 0 13 0M12 17v4m-4 0h8"/></svg></button><input id="input" maxlength="1200" placeholder="اكتب رسالتك هون..." aria-label="Message"><button class="send" type="submit"><span data-ar="إرسال" data-en="Send">إرسال</span><svg viewBox="0 0 24 24"><path d="M4 12 20 4l-4 16-4-6-8-2Z"/><path d="m12 14 8-10"/></svg></button></form>
+  <div class="panel-foot"><span data-ar="نسخة تجريبية · لا تدخل بيانات شخصية أو معلومات دفع" data-en="Demo version · Don't enter personal or payment details">نسخة تجريبية · لا تدخل بيانات شخصية أو معلومات دفع</span><button id="voiceToggle"><i></i><span data-ar="الرد الصوتي مفعّل" data-en="Voice replies on">الرد الصوتي مفعّل</span></button></div>
+</section>
+</main>
+<footer><span>© <span id="year"></span> VISA ONE AI</span><span data-ar="رفيقك الذكي للسفر" data-en="Your intelligent travel companion">رفيقك الذكي للسفر</span><b>✦　✧　✦</b></footer>
+<div id="toast" role="status"></div>
+<script src="script.js"></script>
+</body></html>
